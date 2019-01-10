@@ -55,7 +55,7 @@ It can be changed using the vol variable on playtime.
 Optional. Defines the form of the sound oscillator. Possible values for type are:
 	sine, square, sawtooth, triangle
 
-## Usage
+### Usage
 
 Just beep
 	beep();
