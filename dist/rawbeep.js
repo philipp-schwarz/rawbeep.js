@@ -66,21 +66,27 @@ The main function and a tribute to the BEEP statement from former times. Just ca
 #### notes
 Optional. A string with multiple parts of notes, duration and variables. Parts are separated using at least one space.
 Notes are written as:
+
 	C D E F G A B/H
 
 The octave number can be added right behind the note:
+
 	C4
 
 Duration can be written as fraction, e.g. a quarter tone:
+
 	1/4
 
 To pause the sound for the given duration you can use a dash:
+
 	-
 
 Inline comments can be made with a standalone # sign. There must be a space before and after the #.
+
 	#
 
 Variables are written with an equals sign (=) without any spaces. Fractions as values are allowed.
+
 	vol=0.5
 	bpm=120
 	gap=1/40
@@ -96,32 +102,41 @@ It can be changed using the vol variable on playtime.
 
 #### type
 Optional. Defines the form of the sound oscillator. Possible values for type are:
+
 	sine, square, sawtooth, triangle
 
 ### Usage
 
 Just beep
+
 	beep();
 
 Beep the middle C
+
 	beep('C');
 
 The middle C, but not so loud
+
 	beep('C', 0.1);
 
 Some notes
+
 	beep('C D C E');
 
 Sound gaps
+
 	beep('gap=1/40 C C C C');
 
 Octaves
+
 	beep('C2 C3 C4 C5');
 
 Different duration
+
 	beep('1/4 C 1/2 D 1/8 E C');
 
 Jingle bells (first notes)
+
 	beep('vol=0.5 bpm=130 gap=1/40 1/4 E4 E4 1/2 E4 1/4 E4 E4 1/2 E4 1/4 E4 G4 3/8 C4 1/8 D4 1/1 E4');
 
 */
