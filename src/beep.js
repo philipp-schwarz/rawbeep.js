@@ -143,7 +143,7 @@ function beep(notes, volume, type) {
 }
 
 /*doc*
-# function sound(frequency, [duration, [volume]])
+## function sound(frequency, [duration, [volume]])
 
 The sound function is a tribute to the SOUND statement from former times. The arguments are compatible to QBasic.
 However, volume did not exist back then in QBasic.
