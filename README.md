@@ -48,6 +48,7 @@ Why am I like this?
     - [function beep(notes, volume)](#function-beepnotes-volume)
     - [function sound(frequency, duration, volume)](#function-soundfrequency-duration-volume)
     - [object beepNote](#object-beepnote)
+    - [Note overview](#note-overview)
 
 ## function beepInit()
 
@@ -180,7 +181,9 @@ If you prefer the keycode from a keyboard layout, you can use numbers from 1 to 
 
 	beepNote['k40'] // Middle C, 261.626 Hz
 
-### Piano keys, notes and frequencies
+## Note overview
+
+Piano keys, notes and frequencies
 
 | Key | Note      | Frequency (Hz) |
 | --- | --------- | -------        |
