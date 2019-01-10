@@ -41,6 +41,14 @@ I know that I just wanted to make a single JavaScript function that beeps. Not a
 
 Why am I like this?
 
+## Contents
+- [rawbeep.js] (#rawbeepjs)
+    - [Contents] (#contents)
+    - [function beepInit()] (#function-beepinit)
+    - [function beep(notes, volume)] (#function-beepnotes-volume)
+    - [function sound(frequency, duration, volume)] (#function-soundfrequency-duration-volume)
+    - [object beepNote] (#object-beepnote)
+
 ## function beepInit()
 
 Call beepInit() to initializes rawbeep.

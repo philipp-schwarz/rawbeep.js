@@ -41,6 +41,10 @@ I know that I just wanted to make a single JavaScript function that beeps. Not a
 	`);
 
 Why am I like this?
+
+## Contents
+{fastdoc-toc-2}
+
 *//*doc*
 ## function beepInit()
 
