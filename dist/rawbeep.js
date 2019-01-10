@@ -98,7 +98,7 @@ It can be changed using the vol variable on playtime.
 Optional. Defines the form of the sound oscillator. Possible values for type are:
 	sine, square, sawtooth, triangle
 
-## Usage
+### Usage
 
 Just beep
 	beep();
@@ -186,7 +186,7 @@ function beep(notes, volume, type) {
 }
 
 /*doc*
-# function sound(frequency, [duration, [volume]])
+## function sound(frequency, [duration, [volume]])
 
 The sound function is a tribute to the SOUND statement from former times. The arguments are compatible to QBasic.
 However, volume did not exist back then in QBasic.
@@ -210,17 +210,17 @@ function sound(frequency, duration, volume) {
 }
 /*!doc
 
-#function beepCompile(string)
+##function beepCompile(string)
 
 Converts a string of notes to an array of frequencies.
 If you pass another argument than a string it will be returned unchanged.
 
-## Arguments
+### Arguments
 
-### string
+#### string
 A string with multiple parts of notes, duration and variables. See beep() for note syntax.
 
-## Usage
+### Usage
 
 See beep() for note syntax. If you plan to play a note sequence periodicaly and performance matters to you,
 you can precompile your note string when your app loads and pass it to beep when you want to play it.
@@ -337,11 +337,11 @@ function beepCompile(s) {
 	return noteList;
 }/*doc*
 
-#object beepNote
+## object beepNote
 
 The beepNote list holds all note frequencies for the keyboard keys from 1 (A0) to 88 (C8). See Note section for usage.
 
-# Note
+### Note
 
 Notes are written as lower case letters. B and H are the same.
 
@@ -351,20 +351,20 @@ Rawbeep expects notes as a combination of the note letter and a number for the o
 
 	beepNote['c4'] // Middle C, 261.626 Hz
 
-## Half tone steps
+### Half tone steps
 
 Between the note and the octave there can be a "b" or "#" to indicate a half tone step.
 
 	beepNote['d#4'] // 311.127 Hz
 	beepNote['eb4'] // 311.127 Hz
 
-## Keyboard keys
+### Keyboard keys
 
 If you prefer the keycode from a keyboard layout, you can use numbers from 1 to 88 instead of the note with a "k" as prefix.
 
 	beepNote['k40'] // Middle C, 261.626 Hz
 
-# Piano keys, notes and frequencies
+### Piano keys, notes and frequencies
 
 | Key | Note      | Frequency (Hz) |
 | --- | --------- | -------        |
