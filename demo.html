@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>rawbeep.js Demo</title>
+	<script src="dist/rawbeep.min.js"></script>
+	<style>
+		body { font-family: sans-serif; font-size: 12px; padding-bottom: 40px; }
+		h1, h2 { color: #444; }
+		h2 { border-bottom: 1px solid #888; }
+		button { border: 1px solid #444; color: #444; background-color: #EEE; }
+	</style>
+</head>
+<body>
+
+<h1>rawbeep.js Demo</h1>
+
+<p>Single beep</p>
+<button type="button" onclick="beep();">beep();</button>
+<button type="button" onclick="beep('C');">beep('C');</button>
+<button type="button" onclick="beep('A4');">beep('A4');</button>
+
+<p>Multiple notes</p>
+<button type="button" onclick="beep('C D C E');">beep('C D C E');</button>
+
+<p>Octaves</p>
+<button type="button" onclick="beep('C4 D4 C5 D5');">beep('C4 D4 C5 D5');</button>
+
+<p>Volume control</p>
+<button type="button" onclick="beep('C4', 0.1);">beep('C4', 0.1);</button>
+<button type="button" onclick="beep('C4', 1);">beep('C4', 1);</button>
+
+<p>Note length</p>
+<button type="button" onclick="beep('1/4 C 1/2 D 1/4 C 1 E');">beep('1/4 C 1/2 D 1/4 C 1 E');</button>
+
+<p>Pause (mute note)</p>
+<button type="button" onclick="beep('1/4 C 1/2 - 1/4 C 1 E');">beep('1/4 C 1/2 - 1/4 C 1 E');</button>
+
+<h2>Variables</h2>
+
+<p>Volume inline</p>
+<button type="button" onclick="beep('vol=0.3 C4 vol=0.6 C4 vol=1 C4');">beep('vol=0.3 C4 vol=0.6 C4 vol=1 C4');</button>
+
+<p>Gap</p>
+<button type="button" onclick="beep('C C C C');">beep('C C C C');</button>
+<button type="button" onclick="beep('gap=1/20 C C C C');">beep('gap=1/20 C C C C');</button>
+
+<p>Beats per Minute</p>
+<button type="button" onclick="beep('bpm=120 1/4 C D C E');">beep('bpm=120 1/4 C D C E');</button>
+<button type="button" onclick="beep('bpm=240 1/4 C D C E');">beep('bpm=240 1/4 C D C E');</button>
+
+<h2>Simple examples</h2>
+
+<button type="button" onclick="beep('1/4 G5 F#5 D#5 A4 G#4 E5 G#5 C6');">
+	beep('1/4 G5 F#5 D#5 A4 G#4 E5 G#5 C6');
+</button><br>
+<br>
+
+<button type="button" onclick="beep('vol=0.5 bpm=130 gap=1/40 1/4 E4 E4 1/2 E4 1/4 E4 E4 1/2 E4 1/4 E4 G4 3/8 C4 1/8 D4 1/1 E4');">
+	beep('vol=0.5 bpm=130 gap=1/40 1/4 E4 E4 1/2 E4 1/4 E4 E4 1/2 E4 1/4 E4 G4 3/8 C4 1/8 D4 1/1 E4');
+</button>
+
+
+</body>
+</html>
