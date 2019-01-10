@@ -1,16 +1,16 @@
 /*!doc
 
-#function beepCompile(string)
+##function beepCompile(string)
 
 Converts a string of notes to an array of frequencies.
 If you pass another argument than a string it will be returned unchanged.
 
-## Arguments
+### Arguments
 
-### string
+#### string
 A string with multiple parts of notes, duration and variables. See beep() for note syntax.
 
-## Usage
+### Usage
 
 See beep() for note syntax. If you plan to play a note sequence periodicaly and performance matters to you,
 you can precompile your note string when your app loads and pass it to beep when you want to play it.
